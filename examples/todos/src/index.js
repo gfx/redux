@@ -7,7 +7,9 @@ import reducer from './reducers'
 
 const store = createStore(
   reducer,
-   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  // Installs Redux DevTools if the user installs its browser extension.
+  // See https://github.com/zalmoxisus/redux-devtools-extension for details
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 
 render(
